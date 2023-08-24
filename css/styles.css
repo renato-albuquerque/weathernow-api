@@ -10,10 +10,6 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-:root {
-    /* font-size: 62.5%; */
-}
-
 body {
     background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
     height: 100vh;
@@ -93,9 +89,10 @@ body {
     gap: 1rem;
 }
 
-#umidity, #wind {
+#humidity, #wind {
     display: flex;
-    gap: 0.6rem;
+    align-items: center;
+    /* gap: 0.6rem; */
 }
 
 

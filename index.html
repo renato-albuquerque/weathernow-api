@@ -12,7 +12,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
 
     <title>Weather Now - API</title>
 </head>
@@ -28,31 +28,25 @@
             </div>
         </div>
 
-        <div id="weather-data">
+        <div id="weather-data" class="hide">
             <h2>
                 <i class="fa-solid fa-location-dot"></i>
-                <span id="city">Florianópolis</span>
-                <img src="https://flagsapi.com/BR/flat/64.png" alt="Country flag." id="country">
+                <span id="city"></span>
+                <img src="" alt="Country flag." id="country">
             </h2>
-            <!-- <p id="temperature"><span>30</span>&deg;C</p> -->
+            <div id="details-container">
+                <p id="temperature"><span></span>&deg;C</p>
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
         </div>
-
-        <!-- <div id="description-container">
-            <p id="description">Cloudy</p>
-            <img src="" alt="Weather condition." id="weather-icon">
-        </div> -->
-
-        <div id="details-container">
-            <p id="temperature"><span>30</span>&deg;C</p>
-            <p id="umidity">
-                <i class="fa-solid fa-droplet"></i>
-                <span>48%</span>
-            </p>
-            <p id="wind">
-                <i class="fa-solid fa-wind"></i>
-                <span>3km/h</span>
-            </p>
-        </div>
+        
     </div>
     
 </body>
