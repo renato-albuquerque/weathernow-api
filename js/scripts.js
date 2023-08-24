@@ -1,7 +1,7 @@
 // variables 
 
 const apiKey = "a0b6dbf50b04399ef8f5079a298d1e04";
-const apiCountryURL = "https://flagsapi.com//flat/64.png";
+/* const apiCountryURL = "https://flagsapi.com//flat/64.png"; */
 
 const cityInput = document.querySelector("#city-input");
 const searchBtn = document.querySelector("#search");
@@ -47,8 +47,9 @@ searchBtn.addEventListener("click", (e) => {
 })
 
 cityInput.addEventListener("keyup", (e) => {
-    const city = e.target.value;
+    if (e.code === "Enter") {
+        const city = e.target.value;
     
-    showWeatherData(city);
-    
+        showWeatherData(city);
+    }
 })
