@@ -17,6 +17,43 @@
     <title>Weather Now - API</title>
 </head>
 <body>
+    <div class="container">
+        <div class="form">
+            <h3>City Weather Check</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Type the name of the city." id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass fa-fade"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">Florianópolis</span>
+                <img src="https://flagsapi.com/BR/flat/64.png" alt="Country flag." id="country">
+            </h2>
+            <!-- <p id="temperature"><span>30</span>&deg;C</p> -->
+        </div>
+
+        <!-- <div id="description-container">
+            <p id="description">Cloudy</p>
+            <img src="" alt="Weather condition." id="weather-icon">
+        </div> -->
+
+        <div id="details-container">
+            <p id="temperature"><span>30</span>&deg;C</p>
+            <p id="umidity">
+                <i class="fa-solid fa-droplet"></i>
+                <span>48%</span>
+            </p>
+            <p id="wind">
+                <i class="fa-solid fa-wind"></i>
+                <span>3km/h</span>
+            </p>
+        </div>
+    </div>
     
 </body>
 </html>
