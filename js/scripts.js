@@ -24,7 +24,7 @@ const getWeatherData = async(city) => {
     return data;
 }
 
-const showWeatherData = async (city) => {
+const showWeatherData = async(city) => {
     const data = await getWeatherData(city);
 
     cityElement.innerText = data.name;
